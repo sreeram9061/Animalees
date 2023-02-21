@@ -12,7 +12,7 @@ nav{
     position: absolute;
     width: 100%;
     height: 72px;
-    background: #6b9f6b;
+    background: transparent;
     display: flex;
     justify-content: space-between; 
     padding: 0 20px;  
@@ -277,6 +277,7 @@ nav .container div a{
     align-items: center;
     font-family: 'Poppins', sans-serif;
     color: white;
+    transition: all ease .5s;
 }
 nav .menu-icon img{
     width: 35px;
@@ -299,3 +300,82 @@ nav .menu-icon :nth-child(2),:nth-child(1){
     display: none;
 }
 
+.parenthomecontainer{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parenthomecontainer .rightgreencolor{
+    width: 50%;
+    height: 100vh;
+    background-color: rgb(32, 131, 32);
+    position: absolute;
+    right: 0;
+    z-index: -1;
+}
+
+.homecontainer{
+    width: 1320px;
+    height: 700px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+}
+
+ 
+
+.homecontainer .imgmidilcontainer{
+    height:auto;
+    width: auto;
+    position: absolute;
+    left: 70px;
+    
+    transition: all ease .5s;
+    
+}
+
+.homecontainer .imgmidilcontainer img{
+    width: 705px;
+    height: 439px;
+    opacity: 2;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.homecontainer .homeimgtitile{
+    position: absolute;
+    left: 467px;
+    top: 180px;
+    z-index: 1;
+    color: green;
+    background: rgb(46,171,32);
+background: linear-gradient(90deg, rgba(46,171,32,1) 50%, rgba(255,255,255,1) 50%);
+    -webkit-background-clip: text;
+    -webkit-text-stroke:3px transparent ;
+    font-size: 60px;
+    transition: all ease .5s;
+}
+
+.homecontainer .homeimgparagraph{
+    position: absolute;
+    width: 400px;
+    height: 600px;
+    top: 304px;
+    left: 810px;
+
+}
+
+.homecontainer .homeimgparagraph p{
+    color: orange;
+    width: 100%;
+}
+
+.homecontainer .imgmidilcontainer :hover{
+      transform: translateX(-20px);
+      
+
+
+}

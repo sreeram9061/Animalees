@@ -122,3 +122,38 @@ img14.addEventListener('click',()=>{
     
 
 })
+
+/////***************home img & text animation+++++++++*/
+
+const homeimgtitile =document.querySelector('.homeimgtitile')
+const imgmidilcontainer =document.querySelector('.imgmidilcontainer')
+const logo =document.querySelector('.logo')
+
+imgmidilcontainer.addEventListener('mouseenter',()=>{
+    homeimgtitile.style.transform="translateX(20px)";
+    logo.style.color="orange"
+
+})
+
+imgmidilcontainer.addEventListener('mouseleave',()=>{
+    homeimgtitile.style.transform="translateX(0)";
+    logo.style.color="white"
+
+})
+
+const textTypingAnimation=(tex,typing)=>{
+    let i=0;
+const textTypingAnimation =()=>{
+   
+    if(i< tex.length){
+        typing.innerHTML += tex.charAt(i);
+        i+=1
+    setTimeout(textTypingAnimation,100)
+    }
+}
+textTypingAnimation()
+}
+
+let typing =document.getElementById('typing')
+let text ="Resplendent Quetzal"
+textTypingAnimation(text,typing)
