@@ -1,0 +1,301 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@300&display=swap');
+nav{
+    position: absolute;
+    width: 100%;
+    height: 72px;
+    background: #6b9f6b;
+    display: flex;
+    justify-content: space-between; 
+    padding: 0 20px;  
+}
+nav .container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+nav .container .stitem-1{
+    display: flex;
+        align-items: center;
+        padding: 0 7px;
+        transition: all ease-in-out .4s;
+
+}
+
+nav .container .stitem-1:hover{
+    padding: 7px 7px;
+    border-radius: 20px;
+    border: 1px solid var( --text-color);
+}
+
+nav .container .stitem-2{
+        margin-left: 50px;
+        display: flex;
+        align-items: center;
+        padding: 0 7px;
+        border-radius: 8px;
+        position: relative;
+        transition: all ease-in-out .4s;
+
+}
+nav .container .stitem-2:hover{
+    
+    padding: 7px 7px;
+    border-radius: 20px;
+    border: 1px solid var( --text-color);
+
+}
+
+nav .container .stitem-2 .listthree{
+    position: absolute;
+    height: 180px;
+    top: 39px;
+    width: 140px;
+    left: 8px;
+    /*transform: translateY(117px);*/
+    background-color: transparent;
+    display: none;
+    align-items: end;
+
+}
+
+nav .container .stitem-2 .list{
+    animation: mymove ease 0.5s;
+}
+nav .container .stitem-2 .listtwo{
+    animation: mymoveSecond ease 0.5s;
+    
+}
+
+    
+
+@keyframes mymove {
+    from {
+        top: 65px;
+        opacity: 0.2;
+    }
+    to {
+     top: 39px;
+     opacity: 1;
+    }
+  }
+
+  @keyframes mymoveSecond {
+    from {
+        top: 39px;
+        opacity: 1;
+    }
+    to { 
+        top: 75px;
+        opacity: 0;
+    }
+  } 
+
+nav .container .stitem-2 .dess{
+    /*display: none;*/
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 10px;
+    outline: 1px solid rgb(62, 61, 61);
+    overflow: hidden;
+}
+
+
+
+
+nav .container .stitem-2 .list .dess a{
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background-color: white;
+    
+}
+nav .container .stitem-2 .list .dess a:hover{
+    background-color:rgb(197, 191, 191);
+}
+nav .container .stitem-2 .listtwo .dess a{
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background-color: white;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+nav .container .stitem-3{
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 7px;
+    border-radius: 8px;
+    position: relative;
+    transition: all ease-in-out .4s;
+    
+    
+}
+
+nav .container .stitem-3:hover{
+    
+    padding: 7px 7px;
+    border-radius: 20px;
+    border: 1px solid var( --text-color);
+
+}
+
+nav .container .stitem-3 .newlistthree{
+    position: absolute;
+    background-color:transparent;
+    width: 301px;
+    display: none;
+    align-items: end;
+    height: 180px;
+    top: 39px;
+   
+}
+
+
+nav .container .stitem-3 .list_three{
+    animation: mymove-1 ease 0.5s;
+}
+nav .container .stitem-3 .removee{
+    animation: mymoveSecond-1 ease 0.5s;
+}
+
+
+
+@keyframes mymove-1{
+    from {
+        top: 65px;
+        opacity: 0.2;
+    }
+    to {
+     top: 39px;
+     opacity: 1;
+    }
+  }
+
+  @keyframes mymoveSecond-1{
+    from {
+        top: 39px;
+        opacity: 1;
+    }
+    to { 
+        top: 75px;
+        opacity: 0;
+    }
+  } 
+
+
+
+nav .container .stitem-3 .newlistthree .exp{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    border-radius: 10px;
+    outline: 1px solid rgb(62, 61, 61);
+    overflow: hidden;
+
+}
+
+nav .container .stitem-3 .newlistthree .exp a{
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background-color: white;
+}
+
+
+
+nav .container .stitem-3 .newlistthree .exp a:hover{
+    background-color:rgb(197, 191, 191);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+nav .container .stitem-4{
+    margin-left: 50px;
+    padding: 15px 7px;
+
+}
+
+nav .container .stitem-2  .firstdownarow{
+    transform: rotate(-180deg);
+    margin-left: 10px;
+    width: 26px;
+    transition: all ease .4s;
+}
+
+nav .container .stitem-3 .secondownarow{
+    transform: rotate(-180deg);
+    margin-left: 10px;
+    width: 26px;
+    transition: all ease .4s;
+}
+
+
+nav .container div a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
+.logo{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+nav .menu-icon img{
+    width: 35px;
+}
+
+nav .menu-icon{
+    display: none;
+}
+
+
+
+/******************menu-button***********/
+
+nav .menu-icon :nth-child(2),:nth-child(1){
+    transition: all ease .5s;
+
+}
+
+.sliddermenubar{
+    display: none;
+}
+
