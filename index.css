@@ -314,7 +314,7 @@ nav .menu-icon :nth-child(2),:nth-child(1){
     background-color: rgb(32, 131, 32);
     position: absolute;
     right: 0;
-    z-index: -1;
+   
 }
 
 .homecontainer{
@@ -349,10 +349,10 @@ nav .menu-icon :nth-child(2),:nth-child(1){
     position: absolute;
     left: 467px;
     top: 180px;
-    z-index: 1;
+   /* z-index: 1;*/
     color: green;
     background: rgb(46,171,32);
-background: linear-gradient(90deg, rgba(46,171,32,1) 50%, rgba(255,255,255,1) 50%);
+background: linear-gradient(90deg, rgba(46,171,32,1) 39%, rgba(255,255,255,1) 54%);
     -webkit-background-clip: text;
     -webkit-text-stroke:3px transparent ;
     font-size: 60px;
