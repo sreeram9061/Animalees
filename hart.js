@@ -72,7 +72,7 @@ stitem3.addEventListener('mouseleave',()=>{
 })
 
 //**********************menu-button**************** */
-
+var bol =false
 const img1 =document.querySelector('.img1')
 const img2 =document.querySelector('.img2')
 const menuslid =document.querySelector('.sliddermenubar')
@@ -81,6 +81,7 @@ img1.addEventListener('click',()=>{
     img2.style.transform="translateX(0px) "
     img1.style.transform="translateX(-100px)"
     menuslid.style.transform="translateX(0px) "
+    bol =true
     
 })
 
@@ -88,9 +89,22 @@ img2.addEventListener('click',()=>{
     img1.style.transform="translateX(0px)"
     img2.style.transform="translateX(-100px) "
     menuslid.style.transform="translateX(-1000px) "
+    bol =false
 })
 
-/*************************menuslider section**** */
+window.onclick = function(event) {
+  if ((!event.target.matches('.img2')&&!event.target.matches('.img1'))  && bol==true) {
+        img1.style.transform="translateX(0px)"
+        img2.style.transform="translateX(-100px) "
+        menuslid.style.transform="translateX(-1000px) "
+        bol =false
+      
+    }
+  }
+
+
+
+/*************************menuslider section************* */
 const img11=document.querySelector('.img11')
 const img12=document.querySelector('.img12')
 const img13=document.querySelector('.img13')
@@ -123,6 +137,7 @@ img14.addEventListener('click',()=>{
 
 })
 
+
 /////***************home img & text animation+++++++++*/
 
 const homeimgtitile =document.querySelector('.homeimgtitile')
@@ -141,6 +156,9 @@ imgmidilcontainer.addEventListener('mouseleave',()=>{
 
 })
 
+
+/***************typing-animation**************/
+
 const textTypingAnimation=(tex,typing)=>{
     let i=0;
 const textTypingAnimation =()=>{
@@ -157,3 +175,6 @@ textTypingAnimation()
 let typing =document.getElementById('typing')
 let text ="Resplendent Quetzal"
 textTypingAnimation(text,typing)
+
+
+
