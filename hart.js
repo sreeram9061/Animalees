@@ -76,6 +76,7 @@ var bol =false
 const img1 =document.querySelector('.img1')
 const img2 =document.querySelector('.img2')
 const menuslid =document.querySelector('.sliddermenubar')
+const slid_not_left =document.querySelector('.img_container1')
 
 img1.addEventListener('click',()=>{
     img2.style.transform="translateX(0px) "
@@ -93,7 +94,7 @@ img2.addEventListener('click',()=>{
 })
 
 window.onclick = function(event) {
-  if ((!event.target.matches('.img2')&&!event.target.matches('.img1'))  && bol==true) {
+  if ((!event.target.matches('.img2')&&!event.target.matches('.img1')&&!event.target.matches('.slid_not_left'))  && bol==true) {
         img1.style.transform="translateX(0px)"
         img2.style.transform="translateX(-100px) "
         menuslid.style.transform="translateX(-1000px) "
