@@ -132,8 +132,33 @@
     .homecontainer .homeimgparagraph{
         left: 735px;
         top: 280px;
+    }
+
+    .itemslistsection{
+        grid-template-areas:
+                       "imag inform"
+                       "secondinform secondimg"
+                       "fourthimg fourthform" 
+                       "thirdimg thirdimg"
+                       "thirdinform thirdinform";
+
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 50% 1fr;
 
     }
+
+    .itemslistsection .thirdimg{
+    grid-area:thirdimg;
+    display: inline-block;
+    align-items: center;
+    border-radius:20px ;
+    border-top-left-radius:20px;
+    overflow: hidden;
+    box-shadow: none;
+    margin: 15px auto;
+
+    }
+
     
 }
 
@@ -249,6 +274,63 @@
     width: 286px;
 
     }
+    .itemslistsection{
+        grid-template-areas:
+                    "imag"
+                    "inform"
+                    "secondimg"
+                    "secondinform"
+                    "thirdimg"
+                    "thirdinform"
+                    "fourthimg"
+                    "fourthform";
+
+        grid-template-rows: 1fr 1fr 1fr .7fr 1fr .6fr 1fr .6fr;
+        grid-template-columns: 1fr ;
+        padding: 5px 5px;  
+    }
+
+    .itemslistsection .thirdimg{
+        grid-area:thirdimg;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    border-radius:10px ;
+    border-top-left-radius:100px ;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    
+    
+    } 
+
+    .itemslistsection .inform{
+        border-bottom: 1px solid rgb(135, 134, 134);
+       
+    }
+
+    .itemslistsection .secondinform{
+        border-bottom: 1px solid rgb(135, 134, 134);
+       
+    }
+
+    .itemslistsection .thirdinform{
+        border-bottom: 1px solid rgb(135, 134, 134);
+       
+    }
+
+    
+
+    
+
+    
+    
+    
+
+        
+
+       
+
+    
     
 }
 

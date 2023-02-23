@@ -128,6 +128,7 @@ nav .container .stitem-2 .listtwo .dess a{
     padding: 10px 0;
     background-color: white;
     
+    
 }
 
 
@@ -378,4 +379,145 @@ background: linear-gradient(90deg, rgba(46,171,32,1) 39%, rgba(255,255,255,1) 54
       
 
 
+}
+
+
+
+.itemslistsection{
+    display: grid;
+    grid-template-areas:
+                       "imag inform"
+                       "secondinform secondimg"
+                       "fourthimg fourthform" 
+                       "thirdinform thirdimg";
+
+   padding: 25px 11%;  
+    gap: 10px;                 
+
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+   grid-template-columns: 50% 1fr;
+}
+
+.itemslistsection .imag{
+    grid-area: imag;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius:10px;
+    border-top-right-radius:100px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+   
+    
+}
+.itemslistsection .imag img{
+    height: 100%;
+   
+    
+}
+.itemslistsection .imag img:hover{
+    transform: scale(1.1);
+}
+
+.itemslistsection .inform{
+    grid-area: inform;
+    width: 100%;
+    height: 100%;
+   padding: 20px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+
+}
+
+.itemslistsection .secondinform{
+    grid-area:secondinform;
+    width: 100%;
+    height: 100%;
+   padding: 20px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+
+}
+
+.itemslistsection .secondimg{
+    grid-area:secondimg;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius:10px ;
+    border-top-left-radius:100px ;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+
+}
+.itemslistsection .secondimg img{
+    height: 100%;
+}
+.itemslistsection .secondimg img:hover{
+    transform: scale(1.1);
+}
+
+.itemslistsection .thirdimg{
+    grid-area:thirdimg;
+    display: flex;
+    align-items: center;
+    border-radius:10px ;
+    border-top-left-radius:100px ;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+
+}
+.itemslistsection .thirdimg img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.itemslistsection .thirdimg img:hover{
+    transform: scale(1.1);
+}
+
+.itemslistsection .thirdinform{
+    grid-area:thirdinform;
+    width: 100%;
+    height: 100%;
+   padding: 20px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+
+}
+
+.itemslistsection .fourthimg{
+    grid-area:fourthimg;
+    display: flex;
+    align-items: center;
+    border-radius:10px ;
+    border-top-right-radius:100px ;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+
+.itemslistsection .fourthimg img{
+    height: 100%;
+}
+.itemslistsection .fourthimg img:hover{
+    transform: scale(1.1);
+}
+
+
+.itemslistsection .fourthform{
+    grid-area:fourthform;
+    width: 100%;
+    height: 100%;
+   padding: 20px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
 }
