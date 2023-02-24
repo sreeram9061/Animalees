@@ -380,6 +380,12 @@ background: linear-gradient(90deg, rgba(46,171,32,1) 39%, rgba(255,255,255,1) 54
 
 
 }
+span h2{
+    color: black;
+}
+span p{
+    color: black;
+}
 
 
 
@@ -550,5 +556,42 @@ background: linear-gradient(90deg, rgba(46,171,32,1) 39%, rgba(255,255,255,1) 54
     }to{
         opacity: 1;
     }
+    
+}
+
+
+.singilebirdsection .singlebirdcontainer{
+    background-color: black;
+    display: grid;
+    grid-template-areas: "image information" ;
+    grid-template-rows:1fr ;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 10px;
+    margin: 10px;
+}
+
+.singilebirdsection .singlebirdcontainer .image {
+    grid-area: image;
+    transition: all ease-in-out 2s;
+    
+}
+.animationimg{
+    width: 100%;
+}
+.singilebirdsection .singlebirdcontainer .informofsingileimge{
+    grid-area: information;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5px;
+}
+.informofsingileimge h2{
+
+    color: white;
+    margin-bottom: 20px;
+}
+.informofsingileimge p{
+    color: white;
     
 }

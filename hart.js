@@ -262,3 +262,23 @@ document.querySelector('.img_4').addEventListener('mouseenter',()=>{
     document.getElementById('typing_fourth').innerHTML="Malayan Tiger (Panthera tigris jacksoni)"
 
 }
+
+
+
+let animationimg =document.querySelector('.animationimg');
+let boll7=true
+let j=0;
+
+function reepeat(){
+    if(boll7){
+        animationimg.style.transform="translateY(-15px)"
+        boll7=false
+    }else{
+        animationimg.style.transform="translateY(0)"
+        boll7=true
+
+
+    }
+
+}
+setInterval(reepeat,480)

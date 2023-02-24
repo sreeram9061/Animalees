@@ -330,6 +330,13 @@
         display: block;
     } 
 
+    .singilebirdsection .singlebirdcontainer{
+        grid-template-areas: "image"
+                              "information";
+         grid-template-rows:1fr ;
+         grid-template-columns: 1fr;
+
+    }
     
 
     
