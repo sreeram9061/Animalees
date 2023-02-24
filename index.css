@@ -430,7 +430,11 @@ background: linear-gradient(90deg, rgba(46,171,32,1) 39%, rgba(255,255,255,1) 54
    justify-content: center;
 
 }
+.itemslistsection .inform p{
+    display: none;
+    animation: visibleanimation ease 3s;
 
+}
 .itemslistsection .secondinform{
     grid-area:secondinform;
     width: 100%;
@@ -440,6 +444,12 @@ background: linear-gradient(90deg, rgba(46,171,32,1) 39%, rgba(255,255,255,1) 54
    flex-direction: column;
    align-items: center;
    justify-content: center;
+
+}
+
+.itemslistsection .secondinform p{
+    display: none;
+    animation: visibleanimation ease 3s;
 
 }
 
@@ -493,6 +503,12 @@ background: linear-gradient(90deg, rgba(46,171,32,1) 39%, rgba(255,255,255,1) 54
 
 }
 
+.itemslistsection .thirdinform p{
+    display: none;
+    animation: visibleanimation ease 3s;
+
+}
+
 .itemslistsection .fourthimg{
     grid-area:fourthimg;
     display: flex;
@@ -520,4 +536,19 @@ background: linear-gradient(90deg, rgba(46,171,32,1) 39%, rgba(255,255,255,1) 54
    flex-direction: column;
    align-items: center;
    justify-content: center;
+}
+
+.itemslistsection .fourthform p{
+    display: none;
+    animation: visibleanimation ease 3s;
+
+}
+
+@keyframes visibleanimation {
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+    
 }

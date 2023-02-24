@@ -47,7 +47,6 @@ const leave =(lithr,downarow,bole)=>{
 
 }
 
-
 let bole
 stitem_tow.addEventListener('mouseenter',()=>{
     bole=true
@@ -158,20 +157,21 @@ imgmidilcontainer.addEventListener('mouseleave',()=>{
 })
 
 
-/***************typing-animation**************/
+/***************typing-animation****************/
 
 const textTypingAnimation=(tex,typing)=>{
     let i=0;
 const textTypingAnimation =()=>{
-   
     if(i< tex.length){
         typing.innerHTML += tex.charAt(i);
-        i+=1
+        i++
     setTimeout(textTypingAnimation,100)
     }
 }
 textTypingAnimation()
 }
+
+
 
 let typing =document.getElementById('typing')
 let text ="Resplendent Quetzal"
@@ -179,3 +179,70 @@ textTypingAnimation(text,typing)
 
 
 
+const devicewidth =window.matchMedia('(max-width: 835px)')
+let mediaqueryboll=true;
+if(devicewidth.matches){
+    mediaqueryboll=false
+}
+
+
+
+if(mediaqueryboll){
+    console.log("hleo")
+
+
+
+
+let boll=false
+let texttwo ="Giant panda"
+document.querySelector('.hleoee').addEventListener('mouseenter',()=>{
+let typing_two =document.getElementById('typing_two')
+           if(!boll){
+            document.querySelector('.informptag').style.display="block"
+               textTypingAnimation(texttwo,typing_two) 
+               boll=true
+           }
+})
+
+let boll_2=false
+let textsecond="Philippine eagle (Pithecophaga jefferyi)"
+document.querySelector('.img_2').addEventListener('mouseenter',()=>{
+let typing_scond =document.getElementById('typing_scond');
+    if(!boll_2){
+        document.querySelector('.informptag_2').style.display="block"
+           textTypingAnimation(textsecond,typing_scond) 
+           boll_2=true
+    }
+})
+let boll_3=false
+textthird ="Gharial (Gavialis gangeticus)"
+document.querySelector('.img_3').addEventListener('mouseenter',()=>{
+    let typing_third =document.getElementById('typing_third')
+    if(!boll_3){
+        document.querySelector('.informptag_3').style.display="block"
+        textTypingAnimation(textthird,typing_third)
+        boll_3=true
+    }
+})
+
+let boll_4=false
+textfourth ="Malayan Tiger (Panthera tigris jacksoni)"
+document.querySelector('.img_4').addEventListener('mouseenter',()=>{
+    let typing_fourth =document.getElementById('typing_fourth')
+    if(!boll_4){
+        document.querySelector('.informptag_4').style.display="block"
+        textTypingAnimation(textfourth,typing_fourth)
+        boll_4=true
+    }
+})
+
+
+
+}else{
+    
+    document.getElementById('typing_two').innerHTML="Giant panda"
+    document.getElementById('typing_scond').innerHTML="Philippine eagle (Pithecophaga jefferyi)"
+    document.getElementById('typing_third').innerHTML="Gharial (Gavialis gangeticus)"
+    document.getElementById('typing_fourth').innerHTML="Malayan Tiger (Panthera tigris jacksoni)"
+
+}
