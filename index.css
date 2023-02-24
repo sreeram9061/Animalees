@@ -363,7 +363,7 @@ background: linear-gradient(90deg, rgba(46,171,32,1) 39%, rgba(255,255,255,1) 54
 .homecontainer .homeimgparagraph{
     position: absolute;
     width: 400px;
-    height: 600px;
+    height: auto;
     top: 304px;
     left: 810px;
 
