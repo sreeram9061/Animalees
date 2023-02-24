@@ -109,34 +109,52 @@ const img11=document.querySelector('.img11')
 const img12=document.querySelector('.img12')
 const img13=document.querySelector('.img13')
 const img14=document.querySelector('.img14')
-
+let boll5=false
+let boll6=false
 img11.addEventListener('click',()=>{
     document.querySelector('.deschild').style.display="flex"
     img11.style.display="none"
     img12.style.display="block"
     document.getElementById('sml2').style.marginBottom="0";
+    boll5=true
 
 })
 img12.addEventListener('click',()=>{
     document.querySelector('.deschild').style.display="none"
     img11.style.display="block"
     img12.style.display="none"
+    boll5=false
 })
 img13.addEventListener('click',()=>{
     document.querySelector('.expchild').style.display="flex"
     img13.style.display="none"
     img14.style.display="block"
     document.getElementById('sml1').style.marginBottom="0";
+    boll6=true
 
 })
 img14.addEventListener('click',()=>{
     document.querySelector('.expchild').style.display="none"
     img13.style.display="block"
     img14.style.display="none"
-    
-
+    boll6=false
 })
-
+img2.addEventListener('click',()=>{
+    
+if(boll5==true || boll6==true){
+    console.log("yes it's in")
+   
+    document.querySelector('.deschild').style.display="none"
+    img11.style.display="block"
+    img12.style.display="none"
+    boll5=false
+    document.querySelector('.expchild').style.display="none"
+    img13.style.display="block"
+    img14.style.display="none"
+    boll6=false
+    
+}
+})
 
 /////***************home img & text animation+++++++++*/
 
