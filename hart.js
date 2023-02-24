@@ -254,8 +254,6 @@ document.querySelector('.img_4').addEventListener('mouseenter',()=>{
     }
 })
 
-
-
 }else{
     
     document.getElementById('typing_two').innerHTML="Giant panda"
