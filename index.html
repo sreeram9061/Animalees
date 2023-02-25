@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="mideaqueri.css">
 </head>
 <body>
-    <nav style="z-index: 9;">
+    <nav style="z-index: 9; position: fixed; "  >
         <div class="menu-icon" >
             <img class="img1"  src="img/menu_FILL0_wght400_GRAD0_opsz48.svg" alt="">
             <img class="img2" src="img/close_FILL0_wght400_GRAD0_opsz48.svg" alt="">
@@ -59,7 +59,7 @@
      </nav>
 
     <!------------------menuslider section-------------->
-    <div class="sliddermenubar slid_not_left " style="z-index: 2;" class="dropdown-content" id="helo">
+    <div class="sliddermenubar slid_not_left " style="z-index: 2; position: fixed;" class="dropdown-content" id="helo">
        
         <div class="sliddermenubarlist slid_not_left">
             <a href="" class="slid_not_left" >Home</a>
@@ -124,20 +124,19 @@
     <div class="rightgreencolor" style="z-index: -1;"  >
 
     </div>
-    
 
    </div>
 
    <!-------------------------------item list section--------------------------------->
 
-   <div class="itemslistsection" style="background-color: rgb(32, 131, 32)">
+   <div class="itemslistsection" style="background-color: rgb(32, 131, 32); color: var(--next-text-color);">
     <div class="imag">
         <img class="hleoee" src="https://www.trendingtop5.com/wp-content/uploads/2016/01/top-5-most-rare-animals-in-the-world.jpg" alt="">
 
     </div>
     <div class="inform">
-        <span><h2 id="typing_two" style="text-align: center; margin-bottom: 10px;"></h2></span>
-        <span><p class="informptag">The giant panda (Ailuropoda melanoleuca, sometimes panda bear or simply panda), is a bear species endemic to China.[4] It is characterised by its bold black-and-white coat and rotund body. The name "giant panda" is sometimes used to distinguish it from the red panda, a neighboring musteloid. Though it belongs to the order Carnivora, the giant panda is a folivore, with bamboo shoots and leaves making up more than 99% of its diet.[5] Giant pandas in the wild occasionally eat other grasses, wild tubers, or even meat in the form of birds, rodents, or carrion. In captivity, they may receive honey, eggs, fish, yams, shrub leaves, oranges, or bananas along with specially prepared food.</p></span>
+        <span><h2 id="typing_two" style="text-align: center; margin-bottom: 10px; color: var(--next-text-color);"></h2></span>
+        <span><p class="informptag" style="color: var(--next-text-color);">The giant panda (Ailuropoda melanoleuca, sometimes panda bear or simply panda), is a bear species endemic to China.[4] It is characterised by its bold black-and-white coat and rotund body. The name "giant panda" is sometimes used to distinguish it from the red panda, a neighboring musteloid. Though it belongs to the order Carnivora, the giant panda is a folivore, with bamboo shoots and leaves making up more than 99% of its diet.[5] Giant pandas in the wild occasionally eat other grasses, wild tubers, or even meat in the form of birds, rodents, or carrion. In captivity, they may receive honey, eggs, fish, yams, shrub leaves, oranges, or bananas along with specially prepared food.</p></span>
     </div>
 
    <div class="secondimg">
@@ -182,8 +181,70 @@
         </div>
     </div>
    </div>
-    
+ 
+   <footer>
+    <div class="footercontainer">
+        <div class="stset1">
+            <h3>Animalees</h3>
+            <p>
+                Connect with Wildlife - Zoo Wildlife Presentations
+                Ad.
+                Open weekends from 11-4:30. Free Parking. Birthday parties, summer parties, holiday.</p>
+        </div>
+        <div class="stest2">
+            <h3>Privacy</h3>
+            <p>privacy</p>
+            <p>privacy</p>
+            <p>privacy</p>
+            <p>privacy</p>
+        </div>
 
-    <script src="hart.js"></script>
+        <div class="stest3">
+            <h3>Contact</h3>
+
+            <p>9061103225</p>
+            <p>sreeramg@gmail.com</p>
+             <span>
+                <img src="img/icons8-youtube (11111111111111).svg" alt="">
+                <img src="img/icons8-facebook-circled.svg" alt="">
+                <img src="img/icons8-instagram.svg" alt="">
+             </span>
+        </div>
+
+    </div>
+    
+    <div class="footerendsection">
+        <p>All rights reserved. © 2023 | Animalees</p>
+    </div>
+
+   </footer>
+   <button onclick="myonfunction()" id="lifttop" >
+    <img  src="img/arrow-234.svg" alt="">
+   </button>
+
+   <script>
+    // Get the button
+    let mybutton = document.getElementById("lifttop");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function(){ scrollFunction() };
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "flex";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function myonfunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+   
+
+    <script src="hart.js" class="scrollbtn"></script>
 </body>
 </html>
