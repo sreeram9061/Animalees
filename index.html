@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="mideaqueri.css">
 </head>
 <body>
-    <nav style="z-index: 9; position: fixed; "  >
+    <nav style="z-index: 9; position: fixed; top: -80px; "  >
         <div class="menu-icon" >
             <img class="img1"  src="img/menu_FILL0_wght400_GRAD0_opsz48.svg" alt="">
             <img class="img2" src="img/close_FILL0_wght400_GRAD0_opsz48.svg" alt="">
@@ -232,8 +232,10 @@
     function scrollFunction() {
       if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         mybutton.style.display = "flex";
+        document.querySelector('nav').style.top ="0"
       } else {
         mybutton.style.display = "none";
+        document.querySelector('nav').style.top="-80px"
       }
     }
     
